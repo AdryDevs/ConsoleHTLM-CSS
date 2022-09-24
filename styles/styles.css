@@ -5,16 +5,25 @@ body {
     align-items: center;
 }
 
+/* Main container */
+
 #container {
     background-color: #f0f0f0;
-    display: flex;
     justify-content: center;
     height: 80vh;
     width: 35vw;
     margin: 0;
-    border-radius: 0 0 10% 0;
-    box-shadow: 0 10px 10px 0 rgb(175, 171, 171);
+    border-radius: 2% 2% 12% 2%;
+    box-shadow: 0 6px 10px 0 rgb(175, 171, 171);
 }
+
+/* Top of the console with frame lines */
+
+#container-top {
+    display: flex;
+}
+
+    /* <ON-OFF> circled is here! */
 
 #container-top-left {
     justify-content: left;
@@ -54,3 +63,139 @@ body {
     height: 4vh;
     border-bottom: 3px solid #e4e4e4;
 }
+
+/* Screen container */
+
+#container-midd {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+    width: 35vw;
+}
+
+    /* Main Screen */
+
+#container-midd-screen {
+    background-color: #828282;
+    border-radius: 3% 3% 12% 3%;
+    width: 27vw;
+    height: 27vh;
+}
+
+    /* Line logos and text above the screen */
+
+#container-midd-screen-top {
+    width: 25vw;
+    height: 4vh;
+    display: flex;
+    justify-content: center;
+    margin-left: 7px;
+}
+
+#container-midd-screen-top-1 {
+    width: 7vw;
+    margin-right: 4px;
+}
+
+#purple {
+    background-color: #8c4d8e;
+}
+
+#blue {
+    background-color: #3e4b95;
+}
+
+hr {
+    height: 4px;
+    border: none;
+}
+
+#container-midd-screen-top-2 {
+    width: 11vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#container-midd-screen-top-2-txt {
+    font-size: 8px;
+    color: #acaeaf;
+}
+
+#container-midd-screen-top-3 {
+    width: 5vw;
+    margin-left: 4px;
+}
+
+    /* Battery power led and text */
+
+#container-midd-screen-center-left{
+    width: 2.5vw;
+    height: 20vh;
+    margin-left: 7px;
+}
+
+        /* Power led */
+
+#container-midd-screen-center-left-led {
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+}
+
+#container-midd-screen-center-left-led-logo {
+    background-color: #c77a7a;
+    width: 7px;
+    height: 7px;
+    border: 1px solid #c77a7a;
+    border-radius: 100%;
+    margin-top: 8.4vh;
+    margin-right: 5px;
+}
+
+        /* Battery text */
+
+#container-midd-screen-center-left-battery {
+    display: flex;
+    height: 10vh;
+    font-size: 6px;
+    align-items: Top;
+    justify-content: center;
+}
+
+#container-midd-screen-center-left-battery-txt{
+font-size: 8px;
+    color: #acaeaf;
+}
+    /* TV */
+
+#container-midd-screen-center {
+    display: flex;
+}
+
+#container-midd-screen-center-main {
+    background-color: #c4b668;
+    width: 20vw;
+    height: 20vh;
+    margin-left: 7px;
+}
+
+/* Buttons */
+
+
+
+    /* Movement */
+
+
+
+    /* Action */
+
+
+
+    /* Select and Start */
+
+
+
+/* Speakers */
+
