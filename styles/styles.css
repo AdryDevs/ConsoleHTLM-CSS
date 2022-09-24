@@ -3,12 +3,15 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 
 /* Main container */
 
 #container {
-    background-color: #f0f0f0;
+    background-color: #DCD9D4;
+    background-image: linear-gradient(to bottom, rgba(255,255,255,0.50) 0%, rgba(0,0,0,0.50) 100%), radial-gradient(at 50% 0%, rgba(255,255,255,0.10) 0%, rgba(0,0,0,0.50) 50%);
+    background-blend-mode: soft-light,screen;
     justify-content: center;
     height: 80vh;
     width: 35vw;
@@ -17,19 +20,23 @@ body {
     box-shadow: 0 6px 10px 0 rgb(175, 171, 171);
 }
 
-/* Top of the console with frame lines */
+/* Top */
+
+    /* Top of the console with frame lines */
 
 #container-top {
     display: flex;
 }
 
-    /* <ON-OFF> circled is here! */
+        /* <ON-OFF> circled is here! */
 
 #container-top-left {
     justify-content: left;
     width: 3.5vw;
     height: 4vh;
-    border-bottom: 3px solid #e4e4e4;
+    border-bottom: 3px solid #b3b0b0;
+    background: 
+ background-blend-mode: multiply,multiply;
 }
 
 #container-top-midd {
@@ -37,34 +44,38 @@ body {
     width: 28vw;
     height: 4vh;
     display: flex;
-    border-bottom: 3px solid #e4e4e4;
-    border-right: 3px solid #e4e4e4;
-    border-left: 3px solid #e4e4e4;
+    border-bottom: 3px solid #b3b0b0;
+    border-right: 3px solid #b3b0b0;
+    border-left: 3px solid #b3b0b0;
 }
 
 #container-top-midd-1 {
     display: flex;
     justify-content: center;
-    height: 1vh;
-    border: 1px solid #e4e4e4;
-    border-radius: 90%;
+    height: 1.5vh;
+    border: 1px solid #b3b0b0;
+    border-radius: 30px;
     margin-left: 1vw;
     background-color: #f1ecec;
+    margin-top: 4px;
 }
 
 #container-top-midd-1-onoff {
-    font-size: 0.5vw;
-    color: #e4e4e4;
+    font-size: 0.8vw;
+    color: #b3b0b0;
+    margin-top: 1px;
 }
 
 #container-top-right {
     justify-content: right;
     width: 3.5vw;
     height: 4vh;
-    border-bottom: 3px solid #e4e4e4;
+    border-bottom: 3px solid #b3b0b0;
 }
 
-/* Screen container */
+/* Midd */
+
+    /* Screen container */
 
 #container-midd {
     display: flex;
@@ -74,10 +85,11 @@ body {
     width: 35vw;
 }
 
-    /* Main Screen */
+        /* Main Screen */
 
 #container-midd-screen {
-    background-color: #828282;
+    background-color: #77828a;
+    border: 2px solid #505255;
     border-radius: 3% 3% 12% 3%;
     width: 27vw;
     height: 27vh;
@@ -112,15 +124,15 @@ hr {
 }
 
 #container-midd-screen-top-2 {
-    width: 11vw;
+    width: 12vw;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 #container-midd-screen-top-2-txt {
-    font-size: 8px;
-    color: #acaeaf;
+    font-size: 9px;
+    color: #ced0d1;
 }
 
 #container-midd-screen-top-3 {
@@ -128,7 +140,7 @@ hr {
     margin-left: 4px;
 }
 
-    /* Battery power led and text */
+        /* Battery power led and text */
 
 #container-midd-screen-center-left{
     width: 2.5vw;
@@ -136,7 +148,7 @@ hr {
     margin-left: 7px;
 }
 
-        /* Power led */
+            /* Power led */
 
 #container-midd-screen-center-left-led {
     height: 10vh;
@@ -145,30 +157,29 @@ hr {
 }
 
 #container-midd-screen-center-left-led-logo {
-    background-color: #c77a7a;
+    background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
     width: 7px;
     height: 7px;
-    border: 1px solid #c77a7a;
+    border: 1px solid #e72b2b;
     border-radius: 100%;
     margin-top: 8.4vh;
     margin-right: 5px;
 }
 
-        /* Battery text */
+            /* Battery text */
 
 #container-midd-screen-center-left-battery {
     display: flex;
     height: 10vh;
-    font-size: 6px;
     align-items: Top;
     justify-content: center;
 }
 
 #container-midd-screen-center-left-battery-txt{
-font-size: 8px;
-    color: #acaeaf;
+font-size: 11px;
+    color: #ced0d1;
 }
-    /* TV */
+        /* TV */
 
 #container-midd-screen-center {
     display: flex;
@@ -179,23 +190,106 @@ font-size: 8px;
     width: 20vw;
     height: 20vh;
     margin-left: 7px;
+    box-shadow: inset 0 0 4px 4px #857b47;
 }
 
-/* Buttons */
+/* Bot */
+
+#container-bot {
+    height: 45vh;
+    width: 35vw;
+}
+
+    /* Logos */
+
+#container-bot-logos {
+    width: 35wv;
+    height: 5vh;
+    display: flex;
+    color: #252f7e;
+}
+
+#container-bot-logos-nintendo {
+    margin-left: 50px;
+    margin-right: 2px;
+    margin-top: 6px;
+    font-size: smaller;
+    font-family: Pretendo;
+}
+
+#container-bot-logos-gameboy {
+    font-family:"Comic Sans MS";
+    margin-left: 2px;
+}
+
+    /* Buttons */
+
+#container-bot-1 {
+    width: 35vw;
+    height: 23vh;
+    display: flex;
+}
+
+#container-bot-2 {
+    background-color: rgb(179, 36, 179);
+    width: 35vw;
+    height: 18vh;
+}
+
+        /* Arrows */
+
+#container-bot-1-movement {
+    width: 17.5vw;
+    height: 23vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#container-bot-1-movement-arrows {
+    margin-right: 4vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-content: center;
+    width: 10vw;
+    height: 10vh;
+}
+
+#container-bot-1-movement-arrows-horizontal {
+    background-image: linear-gradient(to right, #434343 0%, black 100%);
+    grid-column: 2/3;
+    grid-row: 1/4;
+    border-radius: 5px 5px 5px 5px;
+    border-left: 1px solid;
+    border-right: 1px solid;
+    border-top: none;
+    border-bottom: none;
+}
+
+#container-bot-1-movement-arrows-vertical {
+    background-image: linear-gradient(to right, #2e2d2d 0%, rgb(14, 13, 13) 100%);
+    grid-column: 1/4;
+    grid-row: 2/3;
+    border-radius: 5px 5px 5px 5px;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    border-left: none;
+    border-right: none;
+}
+
+
+        /* Action */
+
+#container-bot-1-action {
+    background-color: blue;
+    width: 17.5vw;
+    height: 23vh;
+}
+
+        /* Select and Start */
 
 
 
-    /* Movement */
-
-
-
-    /* Action */
-
-
-
-    /* Select and Start */
-
-
-
-/* Speakers */
+    /* Speakers */
 
