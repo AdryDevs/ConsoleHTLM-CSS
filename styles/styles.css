@@ -1,19 +1,32 @@
 body {
     height: 98vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
-    
+    align-items: center; 
+}
+
+/* Colour picker */
+
+#colour-picker {
+    margin-bottom: 20px;
+}
+
+.circle {
+    background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
+    border-radius: 50%;
+    width: 3vw;
+    height: 3vh;
 }
 
 /* Main container */
 
 #container {
-    background-color: #DCD9D4;
+    background-color: #cac7c2;
     background-image: linear-gradient(to bottom, rgba(255,255,255,0.50) 0%, rgba(0,0,0,0.50) 100%), radial-gradient(at 50% 0%, rgba(255,255,255,0.10) 0%, rgba(0,0,0,0.50) 50%);
     background-blend-mode: soft-light,screen;
     justify-content: center;
-    height: 75vh;
+    height: 77vh;
     width: 35vw;
     margin: 0;
     border-radius: 2% 2% 12% 2%;
@@ -35,8 +48,6 @@ body {
     width: 3.5vw;
     height: 4vh;
     border-bottom: 3px solid #b3b0b0;
-    background: 
-    background-blend-mode: multiply,multiply;
 }
 
 #container-top-midd {
@@ -199,7 +210,7 @@ font-size: 11px;
 /* Bot */
 
 #container-bot {
-    height: 45vh;
+    height: 40.7vh;
     width: 35vw;
 }
 
@@ -214,21 +225,20 @@ font-size: 11px;
 
 #container-bot-logos-nintendo {
     margin-left: 50px;
-    margin-right: 2px;
-    margin-top: 6px;
-    font-size: smaller;
+    margin-top: 11px;
     font-family: Pretendo;
 }
 
 #container-bot-logos-gameboy {
     font-family:"Comic Sans MS";
+    font-size: 23px;
     margin-left: 2px;
 }
 
 #tm {
     font-family:"Comic Sans MS";
     font-size: xx-small;
-    margin-top: 7.38px;
+    margin-top: 16px;
 }
 
     /* Buttons */
@@ -249,18 +259,34 @@ font-size: 11px;
     align-items: center;
 }
 
+#container-bot-1-movement-circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(209, 206, 206, 0.5);
+    width: 13vw;
+    height: 13vh;
+    margin-right: 5vw;
+    margin-bottom: 5vh;
+    border-radius: 50%;
+    margin-left: 1vw;
+    box-shadow: inset 1px 1px 1px 1px rgb(117, 116, 116);
+}
+
 #container-bot-1-movement-arrows {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     justify-content: center;
-    margin-right: 4vw;
     width: 10vw;
     height: 10vh;
 }
 
 #container-bot-1-movement-arrows-horizontal {
-    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to right, #434343 0%, black 100%);
     grid-column: 2/3;
     grid-row: 1/4;
     border-radius: 5px 5px 5px 5px;
@@ -268,10 +294,20 @@ font-size: 11px;
     border-right: 1px solid;
     border-top: none;
     border-bottom: none;
+    box-shadow: inset 1px 1px 1px 1px rgb(117, 116, 116);
+}
+
+#container-bot-1-movement-arrows-horizontal-circle {
+    background-image: linear-gradient(to right, #434343 0%, black 100%);
+    width: 2.7vw;
+    height: 2.7vh;
+    color: red;
+    z-index: 1;
+    border-radius: 50%;
 }
 
 #container-bot-1-movement-arrows-vertical {
-    background-color: black;
+    background-image: linear-gradient(to right, #434343 0%, black 100%);
     grid-column: 1/4;
     grid-row: 2/3;
     border-radius: 5px 5px 5px 5px;
@@ -279,6 +315,7 @@ font-size: 11px;
     border-bottom: 1px solid;
     border-left: none;
     border-right: none;
+    box-shadow: inset 1px 0px 1px 0px rgb(117, 116, 116);
 }
 
 
@@ -299,9 +336,10 @@ font-size: 11px;
     align-items: center;
     width: 10vw;
     height: 7vh;
-    border: 1px solid;
+    border: 1px solid rgba(153, 152, 152, 0.5);
     border-radius: 50px;
     margin-left: 4vw;
+    box-shadow: inset 0px 1px 1px 1px rgb(117, 116, 116);
 }
 
 #container-bot-1-action-circle-b {
@@ -313,28 +351,27 @@ font-size: 11px;
 }
 
 .buttons {
-    background-image: linear-gradient(to top, #9b0d2b 0%, #ac504c 100%);
+    background-image: linear-gradient(to top, #860d28 0%, #b9605c 100%);
     width: 4vw;
     height: 5.3vh;
     border-radius: 50px;
+    box-shadow: 1px 2px 2px 0px;
+    border: 1px solid#914354;
 }
 
 #container-bot-1-action-txtbox {
     display: flex;
     width: 4vw;
     height: 4vh;
-}
-
-#container-bot-1-action-circle-btxt {
-    background-color: green;
+    margin-left: 6.5vw;
+    margin-top: 0.6vh;
+    color: #1f2b85;
+    font-size: 14px;
+    font-family: pretendo;
 }
 
 #container-bot-1-action-circle-atxt {
-    background-color: blue;
-}
-
-.buttons-text {
-    
+    margin-left: 4vw;
 }
 
         /* Select and Start */
@@ -343,31 +380,94 @@ font-size: 11px;
     display: flex;
     justify-content: center;
     width: 35vw;
-    height: 17.7vh;
+    height: 5.5vh;
 }
 
 #container-bot-2-buttons {
     display: flex;
     justify-content: center;
     width: 15vw;
-    height: 5vh;
-}
-
-#container-bot-2-buttons-select {
-    
-}
-
-#container-bot-2-buttons-start {
-    
+    height: 4vh;   
 }
 
 .buttons-bot {
-    background: linear-gradient(-180deg, #73787c 0%, #929EAD 98%), radial-gradient(at top left, rgba(255,255,255,0.30) 0%, rgba(0,0,0,0.30) 100%);
+    background: linear-gradient(-180deg, #73787c 0%, #a4b1c2 98%), radial-gradient(at top left, rgba(255,255,255,0.30) 0%, rgba(0,0,0,0.30) 100%);
     width: 4.5vw;
     height: 1.5vh;
-    transform: rotate(-23deg);
     border-radius: 30px;
 }
 
+#container-bot-2-buttons-circle1 {
+    margin-right: 10px;
+}
+
+.circle-bot {
+    width: 5.5vw;
+    height: 2.6vh;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotate(-23deg);
+    background-color: #c7c3be;
+    box-shadow: inset 1px 1px 0px 1px rgb(110, 110, 110);
+}
+
+#container-bot-2-buttons-txt {
+    display: flex;
+    justify-content: center;
+    width: 15vw;
+    height: 4vh;
+    margin-left: 25px;
+}
+
+#container-bot-2-buttons-txt-select {
+    margin-right: 25px;
+    margin-bottom: 10px;
+}
+
+.txt-select-start {
+    transform: rotate(-23deg);
+    font-size: 14px;
+    color: #1f2b85;
+    font-family: pretendo;
+}
+
+#container-bot-2-buttons-box-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
     /* Speakers */
+
+#container-bot-3{
+    display: flex;
+    justify-content: end;
+    
+    width: 35vw;
+    height: 7vh;
+}
+
+#container-bot-3-speaker {
+    width: 10vw;
+    height: 7vh;
+    display: flex;
+    justify-content: center;
+    transform: rotate(-23deg);
+    margin-bottom: 20px;
+}
+
+.lines {
+    border: 1px solid rgb(119, 119, 119);
+    width: 0.4vw;
+    height: 6vh;
+    margin-left: 8px;
+    border-radius: 30px;
+    box-shadow: inset 1px 0px 3px 1px rgb(110, 110, 110);
+}
+
+
+
+    /* Phones */
 
