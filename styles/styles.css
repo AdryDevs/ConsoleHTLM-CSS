@@ -6,12 +6,6 @@ body {
     align-items: center; 
 }
 
-/* Colour picker */
-
-#colour-picker {
-    margin-bottom: 20px;
-}
-
 .circle {
     background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
     border-radius: 50%;
